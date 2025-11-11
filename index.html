@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIA OS - Secure Access Portal</title>
+    <link rel="icon" href="images/icon5d47.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ASCII Intro Overlay */
+        #ascii-intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', monospace;
+            color: #0f0;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            animation: fadeOut 0.5s ease 8s forwards;
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        #ascii-art {
+            text-align: center;
+            white-space: pre;
+            letter-spacing: 0.1em;
+        }
+
+        .ascii-letter {
+            opacity: 0;
+            display: inline-block;
+        }
+
+        /* Glitch effect for letters */
+        @keyframes glitchIn {
+            0% {
+                opacity: 0;
+                transform: translate(-10px, 10px) scale(0.8);
+                text-shadow: 0 0 20px #0f0;
+            }
+            50% {
+                opacity: 0.5;
+                transform: translate(5px, -5px) scale(1.2);
+                text-shadow: 0 0 30px #0f0, 0 0 40px #0f0;
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0, 0) scale(1);
+                text-shadow: 0 0 10px #0f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ASCII Intro Animation -->
+    <div id="ascii-intro">
+        <div id="ascii-art"></div>
+    </div>
+
+    <!-- Hidden Audio (Auto-play) -->
+    <audio id="elia-audio" loop>
+        <source src="images/elia.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="window">
+            <!-- Window Header -->
+            <div class="window-header">
+                <div class="window-lines"></div>
+                <div class="window-title">
+                    <a href="index.html" class="close-btn">x</a>
+                </div>
+            </div>
+            
+            <!-- Main Content Area -->
+            <div class="content-area">
+                <img id="main-image" src="images/off.webp" alt="ELIA OS" class="main-image">
+                
+                <!-- Navigation Options -->
+                <div class="menu-options">
+                    <div class="menu-item">
+                        <a href="pages/introduction.html">[security clearance]</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="pages/browse.html">[encrypted files]</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="pages/browser.html">[elia os market]</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="pages/terminal.html">[secure terminal]</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="pages/room.html">[operations room]</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="pages/user.html">[agent profile]</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="pages/warning.html">[classified notice]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Text Area -->
+            <div class="text-area">
+                <div class="text-content">
+                    <p id="typed-text"></p>
+                    <div class="next-link">
+                        <a href="pages/introduction.html">access&gt;</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-content">
+                    <span class="heart">◆</span>
+                    <span class="text-gray">ELIA OS</span>
+                    <span class="text-gray">-</span>
+                    <span>Encrypted Layer Intelligence Architecture</span>
+                    <span class="text-gray">by</span>
+                    <a href="https://x.com/biiiiymeister" target="_blank">@biiiiymeister</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/typing.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // ASCII Art for ELIA
+        const asciiArt = {
+            E: [
+                "███████╗",
+                "██╔════╝",
+                "█████╗  ",
+                "██╔══╝  ",
+                "███████╗",
+                "╚══════╝"
+            ],
+            L: [
+                "██╗     ",
+                "██║     ",
+                "██║     ",
+                "██║     ",
+                "███████╗",
+                "╚══════╝"
+            ],
+            I: [
+                "██╗",
+                "██║",
+                "██║",
+                "██║",
+                "██║",
+                "╚═╝"
+            ],
+            A: [
+                " █████╗ ",
+                "██╔══██╗",
+                "███████║",
+                "██╔══██║",
+                "██║  ██║",
+                "╚═╝  ╚═╝"
+            ]
+        };
+
+        // Combine letters side by side
+        function combineLetters(letters) {
+            const lines = [];
+            const letterArrays = letters.map(l => asciiArt[l]);
+            
+            for (let i = 0; i < 6; i++) {
+                let line = '';
+                letterArrays.forEach((letter, index) => {
+                    line += letter[i];
+                    if (index < letterArrays.length - 1) {
+                        line += '  '; // Space between letters
+                    }
+                });
+                lines.push(line);
+            }
+            
+            return lines.join('\n');
+        }
+
+        // Animate ASCII art letter by letter
+        async function animateASCII() {
+            const asciiContainer = document.getElementById('ascii-art');
+            const letters = ['E', 'L', 'I', 'A'];
+            
+            // Start audio playback
+            const audio = document.getElementById('elia-audio');
+            try {
+                // Try to play audio (might be blocked by browser)
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => {
+                        console.log('Audio autoplay blocked:', error);
+                        // Try to play on first user interaction
+                        document.addEventListener('click', () => {
+                            audio.play().catch(e => console.log('Audio play failed:', e));
+                        }, { once: true });
+                    });
+                }
+            } catch (e) {
+                console.log('Audio error:', e);
+            }
+
+            // Show letters one by one
+            for (let i = 0; i < letters.length; i++) {
+                const currentLetters = letters.slice(0, i + 1);
+                const combinedArt = combineLetters(currentLetters);
+                
+                // Clear and show current state
+                asciiContainer.innerHTML = '';
+                
+                // Split into lines and wrap each in a span
+                const lines = combinedArt.split('\n');
+                const lineElements = lines.map(line => {
+                    const span = document.createElement('div');
+                    span.className = 'ascii-letter';
+                    span.textContent = line;
+                    span.style.animation = 'glitchIn 0.5s ease forwards';
+                    return span;
+                });
+                
+                lineElements.forEach(el => asciiContainer.appendChild(el));
+                
+                // Wait before showing next letter
+                await new Promise(resolve => setTimeout(resolve, 1500));
+            }
+
+            // Hold final result for 3 seconds
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            
+            // Fade out handled by CSS animation
+        }
+
+        // Start animation when page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            animateASCII();
+            
+            // Remove intro overlay after animation
+            setTimeout(() => {
+                document.getElementById('ascii-intro').remove();
+            }, 8500);
+        });
+
+        // Alternative: Play audio on any user interaction
+        document.addEventListener('click', () => {
+            const audio = document.getElementById('elia-audio');
+            if (audio.paused) {
+                audio.play().catch(e => console.log('Audio play failed:', e));
+            }
+        }, { once: true });
+
+        document.addEventListener('keydown', () => {
+            const audio = document.getElementById('elia-audio');
+            if (audio.paused) {
+                audio.play().catch(e => console.log('Audio play failed:', e));
+            }
+        }, { once: true });
+    </script>
+</body>
+</html>
