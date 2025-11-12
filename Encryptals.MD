@@ -46,7 +46,7 @@ For NFT collection, you need to:
 metaplex create-collection \
   --name "ELIA Encrypted Access" \
   --symbol "ELIA" \
-  --uri "https://eliaos.xyz/metadata.json"
+  --uri "https://eliaos.io/metadata.json"
 ```
 
 #### Option B: Use Your Token as Access Pass (Simpler)
