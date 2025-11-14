@@ -469,7 +469,7 @@ git push origin feature/AmazingFeature
 
 This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file for details.
 ```
-MIT License - Copyright (c) 2024 ELIA OS
+MIT License - Copyright (c) 2025 ELIA OS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -528,8 +528,7 @@ copies of the Software...
 
 **Join our growing community of token creators and traders!**
 
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/your-invite)
-[![Telegram](https://img.shields.io/badge/Telegram-Join%20Chat-26A5E4?logo=telegram&logoColor=white)](https://t.me/your-group)
+
 [![Twitter](https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?logo=twitter&logoColor=white)](https://x.com/ELIAosvm)
 
 **Need help?** Open an [issue](https://github.com/ELIA-OS/elia-launchpad/issues) or reach out on social media.
