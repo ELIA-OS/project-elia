@@ -1,8 +1,4 @@
-My bad\! You're right. You wanted the raw code, not the rendered version.
 
-Here is the **single copy/paste code block** containing all the Markdown.
-
-```markdown
 # 🚀 ELIA Launchpad - Documentation
 
 <div align="center">
@@ -197,15 +193,4 @@ npm run dev
   - 🐦 [@ELIAosvm](https://x.com/ELIAosvm)
   - 📧 support@eliaos.io
 
------
 
-\<div align="center"\>
-
-**[Launch Your Token →](https://eliaos.io/#create)**
-
-Made with ❤️ by ELIA Team | © 2025
-
-\</div\>
-
-```
-```
