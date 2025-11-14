@@ -551,8 +551,6 @@ copies of the Software...
 
 ### 🚀 Ready to launch your token?
 
-**[Get Started Now](https://zec.eliaos.io)** | **[Read the Docs](docs/)** | **[Join Discord](https://discord.gg/your-invite)**
-
 ---
 
 **Made with ❤️ by the ELIA team**
