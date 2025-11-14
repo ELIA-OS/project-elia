@@ -1,7 +1,6 @@
 
 # 🚀 ELIA Launchpad - Documentation
 
-<div align="center">
 
 ![ELIA Banner](https://via.placeholder.com/1200x300/000000/FFFFFF?text=ELIA+LAUNCHPAD)
 
