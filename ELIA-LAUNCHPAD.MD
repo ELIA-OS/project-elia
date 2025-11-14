@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🚀 ELIA Launchpad
+# 🌑 ELIA Launchpad
 
 ### *Decentralized Token Launchpad on Solana*
 
