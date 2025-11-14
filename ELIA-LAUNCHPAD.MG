@@ -1,3 +1,8 @@
+My bad\! You're right. You wanted the raw code, not the rendered version.
+
+Here is the **single copy/paste code block** containing all the Markdown.
+
+```markdown
 # 🚀 ELIA Launchpad - Documentation
 
 <div align="center">
@@ -77,18 +82,22 @@
 ### $ELIA Supply
 
 ```
+
 Total: 1,000,000,000 $ELIA
 ├── Public:  900M (90%)
 └── Team:    100M (10%)
+
 ```
 
 ### Fee Distribution
 
 ```
+
 Trading Fees: 2.25%
 ├── Creator:  50.00%
 ├── LPs:      48.12%
 └── Platform:  1.88%
+
 ```
 
 ### Weekly Rewards
@@ -96,10 +105,12 @@ Trading Fees: 2.25%
 **75%** of platform earnings → Community
 
 ```
+
 Community Pool
 ├── Top 50 Traders:    42.5%
 └── Top 100 Holders:   57.5%
-```
+
+````
 
 **Example** ($1,000 weekly):
 - Traders: $319 total → **$6.38 each**
@@ -163,35 +174,38 @@ GET /all-tokens
 GET /api/leaderboard
 GET /platform-stats
 GET /api/top-holders/:mint
-```
+````
 
-[Full API Docs →](#-api-documentation)
+[Full API Docs →](https://www.google.com/search?q=%23-api-documentation)
 
----
+-----
 
 ## 🛠️ Dev Setup
 
 ```bash
-git clone https://github.com/ELIA-OS/launchpad.git
+git clone [https://github.com/ELIA-OS/launchpad.git](https://github.com/ELIA-OS/launchpad.git)
 npm install
 cp .env.example .env
 npm run dev
 ```
 
----
+-----
 
 ## 📞 Contact
 
-- 🌐 [eliaos.io](https://eliaos.io)
-- 🐦 [@ELIAosvm](https://x.com/ELIAosvm)
-- 📧 support@eliaos.io
+  - 🌐 [eliaos.io](https://eliaos.io)
+  - 🐦 [@ELIAosvm](https://x.com/ELIAosvm)
+  - 📧 support@eliaos.io
 
----
+-----
 
-<div align="center">
+\<div align="center"\>
 
 **[Launch Your Token →](https://eliaos.io/#create)**
 
 Made with ❤️ by ELIA Team | © 2025
 
-</div>
+\</div\>
+
+```
+```
