@@ -12,7 +12,7 @@
 
 [Live Demo](https://zec.eliaos.io) • [Documentation](#-documentation) • [Contributing](CONTRIBUTING.md) • [Twitter](https://x.com/ELIAosvm)
 
-![ELIA Banner](https://via.placeholder.com/1200x300/0a0a0a/ffffff?text=ELIA+Launchpad+%7C+Deploy+%26+Trade+Tokens+on+Solana)
+![ELIA Banner](https://i.ibb.co/d4Rtz3GF/1500x500-1.jpg)
 
 </div>
 
@@ -287,8 +287,8 @@ Full API documentation: [API.md](docs/API.md)
 
 | Allocation | Percentage | Amount | Details |
 |:-----------|:----------:|-------:|:--------|
-| **Public Sale** | 90% | 900,000,000 | Via bonding curve |
-| **Team** | 10% | 100,000,000 | 6-month vesting |
+| **Public Sale** | 90% | 976,000,000 | Via bonding curve |
+| **Team** | 2.4% | 24,000,000 | burnt |
 
 ### Fee Structure
 ```
