@@ -555,8 +555,8 @@ copies of the Software...
 
 **Made with ❤️ by the ELIA team**
 
-[![GitHub stars](https://img.shields.io/github/stars/ELIA-OS/elia-launchpad?style=social)](https://github.com/ELIA-OS/elia-launchpad)
-[![GitHub forks](https://img.shields.io/github/forks/ELIA-OS/elia-launchpad?style=social)](https://github.com/ELIA-OS/elia-launchpad/fork)
-[![GitHub watchers](https://img.shields.io/github/watchers/ELIA-OS/elia-launchpad?style=social)](https://github.com/ELIA-OS/elia-launchpad)
+[![GitHub stars](https://img.shields.io/github/stars/ELIA-OS/elia-launchpad?style=social)](https://github.com/ELIA-OS/project-elia)
+[![GitHub forks](https://img.shields.io/github/forks/ELIA-OS/elia-launchpad?style=social)](https://github.com/ELIA-OS/project-elia/fork)
+[![GitHub watchers](https://img.shields.io/github/watchers/ELIA-OS/elia-launchpad?style=social)](https://github.com/ELIA-OS/project-elia)
 
 </div>
