@@ -281,7 +281,7 @@ Full API documentation: [API.md](docs/API.md)
 
 ### $ELIA Token Distribution
 
-![Tokenomics](https://via.placeholder.com/800x400/0a0a0a/ffffff?text=90%25+Public+%7C+10%25+Team)
+
 
 </div>
 
