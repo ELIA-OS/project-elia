@@ -12,7 +12,7 @@
 
 [Live Demo](https://zec.eliaos.io) • [Documentation](#-documentation) • [Contributing](CONTRIBUTING.md) • [Twitter](https://x.com/ELIAosvm)
 
-![ELIA Banner](https://i.ibb.co/d4Rtz3GF/1500x500-1.jpg)
+![ELIA Banner](banner.png)
 
 </div>
 
